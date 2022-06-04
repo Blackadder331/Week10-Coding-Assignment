@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharp Design Co. | To-do List</title>
+    <link rel="icon" type="image/x-icon" href="images/SHARP-fav-diamond.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<nav>
+    <img src="images/SHARP-logo-white.svg" alt="Sharp Design Co." style="max-width: 175px; padding-top: 0px !important;">
+</nav>
+<body class="container bg-dark" style="background-color: #1c1c1c !important;">
+    <br>
+    <div class="inner-content">
+
+    
+    <div class="card">
+        <div class="card-body"> 
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-task">Task</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="Task">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <br>
+                <button id="add" class="btn btn-primary">Create</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- table -->
+    <br>
+    <br>
+    <br>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Task</th>
+            <th>Date Created</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+
+    <!-- JS library scripts -->
+    <script src="todo.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </div>
+</body>
+</html>
